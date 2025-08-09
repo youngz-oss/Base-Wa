@@ -143,6 +143,22 @@ SELLECT BUTTON PLEASE
     await zenn.sendMessage(m.chat, buttonMessage, { quoted: m });
 }
 break;
+
+case "addprem": {
+if (!isCreator) return m.reply(mess.owner);
+if (!text) return m.reply("❌ Example: /addprem (nomor)");
+let user = text.replace(/[^\d]/g, "");
+addPremiumUser(user, 30);
+m.reply(`✅ Add Premium:\n• ${user} (30 days)`)}
+break;
+//======================
+case "delprem": {
+if (!isCreator) return m.reply(mess.owner);
+if (!text) return m.reply("❌ Example: /delprem (nomor)");
+let user = text.replace(/[^\d]/g, ""); 
+let removed = delPremiumUser(user);
+m.reply(removed ? `✅ Removed Premium:\n• ${user}` : "❌ User tidak ditemukan")}
+break;
 //=======UNTUK CASE KALIAN====
 
 //======================
