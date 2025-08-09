@@ -1,4 +1,18 @@
-//========HELO FRIEND========//
+/*
+⚠️ PERINGATAN:
+Script ini **TIDAK BOLEH BOLEH DI JUAL KARNA INI FREE/GRATIS
+
+╔══════════════════════════════════════════════╗
+║                🛠️ INFORMASI SCRIPT           ║
+╠══════════════════════════════════════════════╣
+║ 📦 Version   : 1.0.0
+║ 👨‍💻 Developer  : Zenn Official            ║    ║
+║ 💻 GitHub  : https://youngz-oss║
+╚══════════════════════════════════════════════╝
+
+📌 Mulai 09 Agustus 2025,
+Script *Base Wa* resmi menjadi *Open Source** dan dapat di gunakan Secara Gratis/Free
+*/
 require('./system/config');
 const { default: makeWASocket, useMultiFileAuthState, DisconnectReason, makeInMemoryStore, jidDecode, proto } = require("@whiskeysockets/baileys");
 const pino = require('pino');
